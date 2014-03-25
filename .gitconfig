@@ -54,5 +54,5 @@
 [pager]
     stash = false
 [credential]
-    helper = osxkeychain
+	helper = cache
 
