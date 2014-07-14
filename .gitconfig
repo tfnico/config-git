@@ -5,8 +5,7 @@
     # email = thomas.nicolaisen@viaboxx.de
 [alias]
     attic = "!f() { git tag attic/$1 $1;git branch -d $1;}; f"
-# git branch -D $1
-    st = !git status && git stash list
+    st = status
     co = checkout
     ci = commit
     b = branch
@@ -33,6 +32,7 @@
 [core]
     editor = /usr/bin/vim
     excludesfile = ~/prefs/global-git-ignores
+	preloadindex = true
 [diff]
     tool = diffmerge
 [difftool]
@@ -56,6 +56,6 @@
     browser = open
 [pager]
     stash = false
-[credential]
-	helper = cache
+[status]
+	relativePaths = true
 
