@@ -24,7 +24,7 @@
     inc = whatchanged
     diffc = diff --cached
     email-viaboxx = config user.email 'thomas.nicolaisen@viaboxx.de'
-    email-private = config user.email 'thomas.nicolaisen@viaboxx.de'
+    email-private = config user.email 'tfnico@gmail.com'
 [apply]
     whitespace = nowarn
 [color]
@@ -59,3 +59,5 @@
 [status]
 	relativePaths = true
 
+[user]
+	name = Thomas Ferris Nicolaisen
