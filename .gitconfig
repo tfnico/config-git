@@ -1,8 +1,6 @@
 [user]
-    # name = Thomas Ferris Nicolaisen
+    name = Thomas Ferris Nicolaisen
     #### SPECIFY EMAIL IN REPO BECAUSE I HAVE TO DECIDE THERE!
-    # email = thomas.nicolaisen@viaboxx.de
-    # email = thomas.nicolaisen@viaboxx.de
 [alias]
     attic = "!f() { git tag attic/$1 $1;git branch -d $1;}; f"
     st = status
@@ -16,7 +14,7 @@
     svn-stash-rebase = !git stash && git svn rebase && git stash pop
     undo-merge-rebase-instead = !git reset --hard HEAD~1 && git pull --rebase
     logv = log --name-status
-    logd = log --decorate
+    logd = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
     logtree = log --graph --oneline --decorate --all
     showv = show --name-status
     cp = cherry-pick -e
@@ -50,14 +48,23 @@
     rmdir = true
 [push]
     default = tracking
-[rebase]
-    autosquash = true
 [web]
     browser = open
 [pager]
     stash = false
 [status]
 	relativePaths = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+[rebase]
+    autosquash = true
+	autoStash = true
+[pull]
+	rebase = true
 
-[user]
-	name = Thomas Ferris Nicolaisen
