@@ -29,7 +29,7 @@
     ui = auto
 [core]
     editor = /usr/bin/vim
-    excludesfile = ~/prefs/global-git-ignores
+    excludesfile = ~/.git_global_ignores
 	preloadindex = true
 [diff]
     tool = diffmerge
