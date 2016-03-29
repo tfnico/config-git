@@ -1,6 +1,6 @@
 [user]
     name = Thomas Ferris Nicolaisen
-    #### SPECIFY EMAIL IN REPO BECAUSE I HAVE TO DECIDE THERE!
+    useconfigonly = true
 [alias]
     attic = "!f() { git tag attic/$1 $1;git branch -d $1;}; f"
     st = status
