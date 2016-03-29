@@ -30,7 +30,7 @@
 [core]
     editor = /usr/bin/vim
     excludesfile = ~/.git_global_ignores
-	preloadindex = true
+    preloadindex = true
 [diff]
     tool = diffmerge
 [difftool]
@@ -53,18 +53,18 @@
 [pager]
     stash = false
 [status]
-	relativePaths = true
+    relativePaths = true
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [rebase]
     autosquash = true
-	autoStash = true
+    autoStash = true
 [pull]
-	rebase = true
+    rebase = true
 
