@@ -16,6 +16,7 @@
     logv = log --name-status
     logd = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
     logtree = log --graph --oneline --decorate --all
+    logc = log-compact --graph --decorate --all
     showv = show --name-status
     cp = cherry-pick -e
     walk = !git-walk
