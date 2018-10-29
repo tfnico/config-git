@@ -1,5 +1,4 @@
 [user]
-    name = Thomas Ferris Nicolaisen
     useconfigonly = true
 [alias]
     attic = "!f() { git tag attic/$1 $1;git branch -d $1;}; f"
