@@ -23,6 +23,7 @@
     diffc = diff --cached
     email-eyeo = !git config user.email 'f.nicolaisen@eyeo.com' && git config user.name 'Ferris Nicolaisen'
     email-private = config user.email 'tfnico@gmail.com'
+    name-private = config user.name 'Thomas Ferris Nicolaisen'
 [apply]
     whitespace = nowarn
 [color]
